@@ -1,14 +1,16 @@
 # Arduino_2Bto1IN
 Arduino - two buttons on one input
 
-             +---T1--+---T2--+
-             |       |       |
-Ucc ---> R0 -+-> R1 -.-> R2 -+- GND
-             |               |
-            Uout            GND
-         (Arduino IN)
+                  +---T1--+---T2--+
+                  |       |       |
+     Ucc ---> R0 -+-> R1 -.-> R2 -+- GND
+                  |               |
+                 Uout            GND
+             (Arduino IN)
 
-With setup 1% => 919 simple/serial/parralel resistor combinations is result:
+The Arduino input needs to be protected with a 10k resistor and a zener diode (5.1V to GND) with a small parallel 100nF capacitor.
+
+Script results with setup 1% => 919 simple/serial/parralel resistor combinations.
 Number of calculated resistor combinations: 909
 Number of iterations: 7.51089429e+8
 Best resistor combination:
